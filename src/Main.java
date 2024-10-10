@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+       /* System.out.println("Hello World!");
         //para declarar el objeto
         //para instanciar una clase
         Libro libro1= new Libro("El resplandor","Stephen King","de bolsillo",700);
@@ -23,6 +23,19 @@ public class Main {
         System.out.println(libro4.imprimir_cubierta());
         libro5.imprimir();
         System.out.println(libro5.imprimir_cubierta());
+*/
 
+    Cancion cancion1= new Cancion("Africa", "rock","Toto","IV", 10);
+    Cancion cancion2= new Cancion();
+    //Cancion cancion2= new Cancion("Visite Nuestro Bar","Rock en español","Hombres G","La Cagaste Burnslaguer", 1);
+
+    System.out.println(cancion1.getNombre());
+
+    cancion1.setPista(15);
+    System.out.println(cancion1.getPista());
+    cancion2.setNombre("Visita");
+    cancion2.setPista(15);
+    cancion1.setAlbum("Hombres G");
     }
 }
+

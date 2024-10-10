@@ -14,12 +14,56 @@ public class Cancion {
         this.album = album;
         this.pista = pista;
     }
+    //constructor vacío
+
+    public Cancion() {
+
+    }
+
+    //getters
+    public String getNombre() {
+        return nombre;
+    }
+    public String getGenero() {
+        return genero;
+    }
+    public String getArtista() {
+        return artista;
+    }
+    public String getAlbum() {
+        return album;
+    }
+
+    public int getPista() {
+        return pista;
+    }
+    //setters
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    public void setGenero(String genero) {
+        this.genero = genero;
+
+    }
+    public void setArtista(String artista) {
+        this.artista = artista;
+
+    }
+    public void setAlbum(String album) {
+        this.album = album;
+
+    }
+    public void setPista(int pista) {
+        this.pista = pista;
+
+    }
+    //métodos personalizados
     public void imprimir() {
-        System.out.println("El nombre es: "+this.nombre);
-        System.out.println("El género es: "+this.genero);
-        System.out.println("El artista es: "+this.artista);
-        System.out.println("El álbum: "+this.album);
-        System.out.println("El número de pista es: "+this.pista);
-        System.out.println("--------------------");
+        System.out.println("Nombre: "+this.nombre);
+        System.out.println("Genero: "+this.genero);
+        System.out.println("Artista: "+this.artista);
+        System.out.println("Album: "+this.album);
+        System.out.println("Pista: "+this.pista);
+
     }
 }
